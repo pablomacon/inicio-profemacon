@@ -9,7 +9,7 @@ Portal estático de acceso a los espacios educativos de Profe Macón, como apoyo
 - `assets/img/`: logotipos originales.
 - `assets/fonts/`: Montserrat variable y su licencia SIL Open Font License.
 
-La paleta y el diseño se centralizan en las variables CSS de `:root`. Se utiliza Montserrat para títulos y texto, con pesos adaptados a cada jerarquía. El sitio no requiere JavaScript ni dependencias de ejecución.
+La paleta y el diseño se centralizan en las variables CSS de `:root`. Se utiliza Montserrat para títulos y texto, con pesos adaptados a cada jerarquía. La portada es estática y no requiere dependencias de ejecución. El selector de tema usa JavaScript para respetar la preferencia del sistema y guardar la elección en el navegador.
 
 ## Vista previa
 
