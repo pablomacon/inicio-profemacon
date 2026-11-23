@@ -52,10 +52,9 @@
   background: var(--surface);
   border-color: var(--border);
 }
-[data-theme="dark"] :is(.brand, .footer-brand img, .hero-art img) {
-  background: #fff;
-  border-radius: 10px;
-}
+.logo-dark,
+[data-theme="dark"] .logo-light { display: none; }
+[data-theme="dark"] .logo-dark { display: block; }
 [data-theme="dark"] :is(.header nav a:hover, .nav-current, .theme-toggle:hover, .card-arrow) {
   background: var(--accent-surface);
   color: var(--petrol);
