@@ -1,50 +1,223 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profe Macón | Programación y recursos educativos</title>
-  <meta name="description" content="Espacio educativo de Profe Macón. Materiales de programación, actividades interactivas y recursos digitales para estudiantes de Secundaria y UTU.">
-  <link rel="canonical" href="https://profemacon.net/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Profe Macón | Programación y recursos educativos">
-  <meta property="og:description" content="Materiales de programación, actividades interactivas y recursos digitales para estudiantes de Secundaria y UTU.">
-  <meta property="og:url" content="https://profemacon.net/">
-  <meta property="og:image" content="https://profemacon.net/assets/img/logo-profemacon.png">
-  <link rel="icon" type="image/png" href="assets/img/logo-pm.png">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body id="inicio">
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Profe Macón, inicio"><img src="assets/img/logo-profemacon.png" alt="Profe Macón" width="800" height="300"></a>
-      <nav aria-label="Navegación principal">
-        <a class="nav-current" href="#inicio" aria-current="page">Inicio</a><a href="#espacios">Espacios</a><a href="#cursos">Cursos</a><a href="#proyecto">Sobre el proyecto</a>
-      </nav>
-    </div>
-  </header>
-  <main id="contenido">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-waves" aria-hidden="true"><svg viewBox="0 0 1440 230" preserveAspectRatio="none"><path fill="#d8f3f1" d="M0 115C270 20 423 215 733 127s455-112 707-20v123H0Z"/><path fill="#e7e4f4" opacity=".8" d="M0 167c280-89 438 102 743 13s450-82 697-23v73H0Z"/><path fill="#f5f8fa" d="M0 201c277-61 448 71 736 3s451-52 704-5v31H0Z"/></svg></div>
-      <div class="container hero-inner">
-        <div class="hero-copy"><p class="eyebrow">EDUCACIÓN · PROGRAMACIÓN · TECNOLOGÍA</p><h1 id="hero-title" aria-label="Profe Macón">PROFE MAC<span class="accent-o" aria-hidden="true">O</span>N</h1><p class="hero-description">Recursos, actividades y espacios digitales para programación y educación.</p><div class="hero-actions"><a class="button button-primary" href="#espacios">Ir a espacios <span aria-hidden="true">→</span></a><a class="button button-outline" href="#proyecto">Conocer el proyecto</a></div></div>
-        <div class="hero-art"><div class="hero-orbit" aria-hidden="true"></div><img src="assets/img/logo-pm.png" alt="" width="200" height="101"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profe Macón | Programación y recursos educativos</title>
+    <meta
+      name="description"
+      content="Espacio educativo de Profe Macón. Materiales de programación, actividades interactivas y recursos digitales para estudiantes de Secundaria y UTU."
+    />
+    <link rel="canonical" href="https://profemacon.net/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Profe Macón | Programación y recursos educativos"
+    />
+    <meta
+      property="og:description"
+      content="Materiales de programación, actividades interactivas y recursos digitales para estudiantes de Secundaria y UTU."
+    />
+    <meta property="og:url" content="https://profemacon.net/" />
+    <meta
+      property="og:image"
+      content="https://profemacon.net/assets/img/logo-profemacon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/img/logo-pm.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body id="inicio">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Profe Macón, inicio"
+          ><img
+            src="assets/img/logo-profemacon.png"
+            alt="Profe Macón"
+            width="800"
+            height="300"
+        /></a>
+        <nav aria-label="Navegación principal">
+          <a class="nav-current" href="#inicio" aria-current="page">Inicio</a
+          ><a href="#espacios">Espacios</a><a href="#cursos">Cursos</a
+          ><a href="#proyecto">Sobre el proyecto</a>
+        </nav>
       </div>
-    </section>
-    <section class="spaces container" id="espacios" aria-labelledby="espacios-title">
-      <div class="section-heading"><div><p class="eyebrow">APRENDER Y PRACTICAR</p><h2 id="espacios-title">Explorá los espacios</h2></div><p>Recursos para acompañarte dentro y fuera del aula.</p></div>
-      <div class="cards">
-        <a class="card" href="https://actividades-liceo.profemacon.net/"><span class="icon-box"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m4 18 20-9 20 9-20 9L4 18Zm8 5v9c7 6 17 6 24 0v-9M43 19v13"/></svg></span><h3>Actividades Liceo</h3><p>Actividades y materiales para el trabajo en el liceo.</p><span class="card-arrow" aria-hidden="true">→</span></a>
-        <a class="card" id="cursos" href="https://programacion-java.profemacon.net/"><span class="icon-box"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M13 24h22v8a9 9 0 0 1-9 9h-4a9 9 0 0 1-9-9v-8Zm22 3h3a4 4 0 0 1 0 8h-4M16 45h20M22 19c-6-5 7-5 1-10M29 19c-5-4 5-5 2-10"/></svg></span><h3>Programación I</h3><p>Introducción a la programación.</p><span class="card-arrow" aria-hidden="true">→</span></a>
-        <a class="card" href="https://programacion-avanzada.profemacon.net/"><span class="icon-box"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 7c-6 0-6 3-6 8v3c0 4-2 6-6 6 4 0 6 2 6 6v3c0 5 0 8 6 8M30 7c6 0 6 3 6 8v3c0 4 2 6 6 6-4 0-6 2-6 6v3c0 5 0 8-6 8M27 15l-6 18"/></svg></span><h3>Programación Avanzada</h3><p>Programación orientada a objetos y desarrollo de proyectos.</p><span class="card-arrow" aria-hidden="true">→</span></a>
-        <a class="card" href="https://actividades.profemacon.net/"><span class="icon-box"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="25" rx="3"/><path d="M4 39h40l-4-6H8l-4 6ZM20 16l-4 4 4 4m8-8 4 4-4 4"/></svg></span><h3>Actividades UTU</h3><p>Prácticas, ejercicios y recursos interactivos.</p><span class="card-arrow" aria-hidden="true">→</span></a>
+    </header>
+    <main id="contenido">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-waves" aria-hidden="true">
+          <svg viewBox="0 0 1440 230" preserveAspectRatio="none">
+            <path
+              fill="#d8f3f1"
+              d="M0 115C270 20 423 215 733 127s455-112 707-20v123H0Z"
+            />
+            <path
+              fill="#e7e4f4"
+              opacity=".8"
+              d="M0 167c280-89 438 102 743 13s450-82 697-23v73H0Z"
+            />
+            <path
+              fill="#f5f8fa"
+              d="M0 201c277-61 448 71 736 3s451-52 704-5v31H0Z"
+            />
+          </svg>
+        </div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">EDUCACIÓN · PROGRAMACIÓN · TECNOLOGÍA</p>
+            <h1 id="hero-title" aria-label="Profe Macón">
+              PROFE MAC<span class="accent-o" aria-hidden="true">O</span>N
+            </h1>
+            <p class="hero-description">
+              Recursos, actividades y espacios digitales para programación y
+              educación.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#espacios"
+                >Ir a espacios <span aria-hidden="true">→</span></a
+              ><a class="button button-outline" href="#proyecto"
+                >Conocer el proyecto</a
+              >
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="assets/img/logo-pm.png" alt="" width="200" height="101" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="spaces container"
+        id="espacios"
+        aria-labelledby="espacios-title"
+      >
+        <div class="section-heading">
+          <div>
+            <h2 id="espacios-title">Explorá los espacios</h2>
+          </div>
+          <p>Recursos para acompañarte dentro y fuera del aula.</p>
+        </div>
+        <div class="cards">
+          <a class="card" href="https://actividades-liceo.profemacon.net/"
+            ><span class="icon-box"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="m4 18 20-9 20 9-20 9L4 18Zm8 5v9c7 6 17 6 24 0v-9M43 19v13"
+                /></svg
+            ></span>
+            <h3>Actividades Liceo</h3>
+            <p>Actividades y materiales para el trabajo en el liceo.</p>
+            <span class="card-arrow" aria-hidden="true">→</span></a
+          >
+          <a
+            class="card"
+            id="cursos"
+            href="https://programacion-java.profemacon.net/"
+            ><span class="icon-box"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="M13 24h22v8a9 9 0 0 1-9 9h-4a9 9 0 0 1-9-9v-8Zm22 3h3a4 4 0 0 1 0 8h-4M16 45h20M22 19c-6-5 7-5 1-10M29 19c-5-4 5-5 2-10"
+                /></svg
+            ></span>
+            <h3>Programación I</h3>
+            <p>Introducción a la programación.</p>
+            <span class="card-arrow" aria-hidden="true">→</span></a
+          >
+          <a class="card" href="https://programacion-avanzada.profemacon.net/"
+            ><span class="icon-box"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="M18 7c-6 0-6 3-6 8v3c0 4-2 6-6 6 4 0 6 2 6 6v3c0 5 0 8 6 8M30 7c6 0 6 3 6 8v3c0 4 2 6 6 6-4 0-6 2-6 6v3c0 5 0 8-6 8M27 15l-6 18"
+                /></svg
+            ></span>
+            <h3>Programación Avanzada</h3>
+            <p>Programación orientada a objetos y desarrollo de proyectos.</p>
+            <span class="card-arrow" aria-hidden="true">→</span></a
+          >
+          <a class="card" href="https://actividades.profemacon.net/"
+            ><span class="icon-box"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="8" y="8" width="32" height="25" rx="3" />
+                <path
+                  d="M4 39h40l-4-6H8l-4 6ZM20 16l-4 4 4 4m8-8 4 4-4 4"
+                /></svg
+            ></span>
+            <h3>Actividades UTU</h3>
+            <p>Prácticas, ejercicios y recursos interactivos.</p>
+            <span class="card-arrow" aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+      <section class="future container" aria-labelledby="future-title">
+        <div class="future-illustration" aria-hidden="true">
+          <svg viewBox="0 0 250 165" fill="none">
+            <rect
+              x="37"
+              y="15"
+              width="176"
+              height="112"
+              rx="12"
+              fill="#123f54"
+              stroke="#9af3ee"
+              stroke-width="4"
+            />
+            <path d="M24 130h202l-12 14H36l-12-14Z" fill="#9af3ee" />
+            <path
+              d="m95 53-18 18 18 18m60-36 18 18-18 18m-13-47-25 59"
+              stroke="#fff"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="125" cy="22" r="2" fill="#9af3ee" />
+          </svg>
+        </div>
+        <div class="future-copy">
+          <p class="eyebrow">UNA NUEVA ETAPA</p>
+          <h2 id="future-title" aria-label="Profe Macón 2.0">
+            Profe Mac<span class="accent-o" aria-hidden="true">o</span>n 2.0
+          </h2>
+          <p>
+            Estamos construyendo una nueva plataforma centralizada de cursos y
+            actividades.
+          </p>
+          <span class="badge">Próximamente</span>
+        </div>
+      </section>
+      <section
+        class="about container"
+        id="proyecto"
+        aria-labelledby="proyecto-title"
+      >
+        <div>
+          <p class="eyebrow">EDUCACIÓN Y TECNOLOGÍA</p>
+          <h2 id="proyecto-title">Sobre el proyecto</h2>
+        </div>
+        <p>
+          Profe Macón es un espacio digital de apoyo a la enseñanza presencial
+          de la programación y las ciencias de la computación. Reúne materiales
+          de estudio, actividades interactivas, ejercicios y recursos educativos
+          que acompañan el trabajo realizado en clase y permiten continuar
+          aprendiendo de forma autónoma.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img
+            src="assets/img/logo-profemacon.png"
+            alt="Profe Macón"
+            width="800"
+            height="300"
+          />
+          <div>
+            <strong>profemacon.net</strong>
+            <p>Educación · Programación · Recursos digitales</p>
+          </div>
+        </div>
+        <p>© 2026 Profe Macón</p>
       </div>
-    </section>
-    <section class="future container" aria-labelledby="future-title"><div class="future-illustration" aria-hidden="true"><svg viewBox="0 0 250 165" fill="none"><rect x="37" y="15" width="176" height="112" rx="12" fill="#123f54" stroke="#9af3ee" stroke-width="4"/><path d="M24 130h202l-12 14H36l-12-14Z" fill="#9af3ee"/><path d="m95 53-18 18 18 18m60-36 18 18-18 18m-13-47-25 59" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="125" cy="22" r="2" fill="#9af3ee"/></svg></div><div class="future-copy"><p class="eyebrow">UNA NUEVA ETAPA</p><h2 id="future-title" aria-label="Profe Macón 2.0">Profe Mac<span class="accent-o" aria-hidden="true">o</span>n 2.0</h2><p>Estamos construyendo una nueva plataforma centralizada de cursos y actividades.</p><span class="badge">Próximamente</span></div></section>
-    <section class="about container" id="proyecto" aria-labelledby="proyecto-title"><div><p class="eyebrow">EDUCACIÓN Y TECNOLOGÍA</p><h2 id="proyecto-title">Sobre el proyecto</h2></div><p>Profe Macón es un espacio digital de apoyo a la enseñanza presencial de la programación y las ciencias de la computación. Reúne materiales de estudio, actividades interactivas, ejercicios y recursos educativos que acompañan el trabajo realizado en clase y permiten continuar aprendiendo de forma autónoma.</p></section>
-  </main>
-  <footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="assets/img/logo-profemacon.png" alt="Profe Macón" width="800" height="300"><div><strong>profemacon.net</strong><p>Educación · Programación · Recursos digitales</p></div></div><p>© 2026 Profe Macón</p></div></footer>
-</body>
+    </footer>
+  </body>
 </html>
-
