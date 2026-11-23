@@ -24,24 +24,78 @@
       content="https://profemacon.net/assets/img/logo-profemacon.png"
     />
     <link rel="icon" type="image/png" href="assets/img/logo-pm.png" />
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const storageKey = "profemacon-theme";
+        let preference;
+
+        try {
+          preference = localStorage.getItem(storageKey);
+        } catch {
+          // The selector still works when storage is blocked.
+        }
+
+        function applyTheme() {
+          const dark = preference === "dark" ||
+            (preference !== "light" && systemTheme.matches);
+
+          root.dataset.theme = dark ? "dark" : "light";
+          document.getElementById("theme-toggle")?.setAttribute("aria-pressed", String(dark));
+        }
+
+        applyTheme();
+        systemTheme.addEventListener("change", applyTheme);
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggle = document.getElementById("theme-toggle");
+
+          toggle.addEventListener("click", () => {
+            preference = root.dataset.theme === "dark" ? "light" : "dark";
+            try {
+              localStorage.setItem(storageKey, preference);
+            } catch {
+              // Keep the selection for the current visit.
+            }
+            applyTheme();
+          });
+
+          applyTheme();
+          toggle.hidden = false;
+        });
+      })();
+    </script>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body id="inicio">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="header">
       <div class="container header-inner">
-        <a class="brand" href="#inicio" aria-label="Profe Macón, inicio"
-          ><img
+        <a class="brand" href="#inicio" aria-label="Profe Macón, inicio">
+          <img class="logo-light"
             src="assets/img/logo-profemacon.png"
             alt="Profe Macón"
             width="800"
             height="300"
-        /></a>
+          />
+          <img class="logo-dark"
+            src="assets/img/logo-profemacon-dark.png"
+            alt="Profe Macón"
+            width="800"
+            height="300"
+          />
+        </a>
         <nav aria-label="Navegación principal">
           <a class="nav-current" href="#inicio" aria-current="page">Inicio</a
           ><a href="#espacios">Espacios</a><a href="#cursos">Cursos</a
           ><a href="#proyecto">Sobre el proyecto</a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" hidden>
+          <span aria-hidden="true" class="theme-moon">☾</span>
+          <span aria-hidden="true" class="theme-sun">☀</span>
+          Modo oscuro
+        </button>
       </div>
     </header>
     <main id="contenido">
@@ -49,16 +103,16 @@
         <div class="hero-waves" aria-hidden="true">
           <svg viewBox="0 0 1440 230" preserveAspectRatio="none">
             <path
-              fill="#d8f3f1"
+              class="wave-first" fill="#d8f3f1"
               d="M0 115C270 20 423 215 733 127s455-112 707-20v123H0Z"
             />
             <path
-              fill="#e7e4f4"
+              class="wave-second" fill="#e7e4f4"
               opacity=".8"
               d="M0 167c280-89 438 102 743 13s450-82 697-23v73H0Z"
             />
             <path
-              fill="#f5f8fa"
+              class="wave-base" fill="#f5f8fa"
               d="M0 201c277-61 448 71 736 3s451-52 704-5v31H0Z"
             />
           </svg>
@@ -82,7 +136,8 @@
             </div>
           </div>
           <div class="hero-art">
-            <img src="assets/img/logo-pm.png" alt="" width="200" height="101" />
+            <img class="logo-light" src="assets/img/logo-pm.png" alt="" width="200" height="101" />
+            <img class="logo-dark" src="assets/img/logo-pm-dark.png" alt="" width="200" height="101" />
           </div>
         </div>
       </section>
@@ -205,8 +260,14 @@
     <footer class="footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <img
+          <img class="logo-light"
             src="assets/img/logo-profemacon.png"
+            alt="Profe Macón"
+            width="800"
+            height="300"
+          />
+          <img class="logo-dark"
+            src="assets/img/logo-profemacon-dark.png"
             alt="Profe Macón"
             width="800"
             height="300"
