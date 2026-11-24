@@ -24,49 +24,8 @@
       content="https://profemacon.net/assets/img/logo-profemacon.png"
     />
     <link rel="icon" type="image/png" href="assets/img/logo-pm.png" />
-    <script>
-      (() => {
-        const root = document.documentElement;
-        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
-        const storageKey = "profemacon-theme";
-        let preference;
-
-        try {
-          preference = localStorage.getItem(storageKey);
-        } catch {
-          // The selector still works when storage is blocked.
-        }
-
-        function applyTheme() {
-          const dark = preference === "dark" ||
-            (preference !== "light" && systemTheme.matches);
-
-          root.dataset.theme = dark ? "dark" : "light";
-          document.getElementById("theme-toggle")?.setAttribute("aria-pressed", String(dark));
-        }
-
-        applyTheme();
-        systemTheme.addEventListener("change", applyTheme);
-
-        document.addEventListener("DOMContentLoaded", () => {
-          const toggle = document.getElementById("theme-toggle");
-
-          toggle.addEventListener("click", () => {
-            preference = root.dataset.theme === "dark" ? "light" : "dark";
-            try {
-              localStorage.setItem(storageKey, preference);
-            } catch {
-              // Keep the selection for the current visit.
-            }
-            applyTheme();
-          });
-
-          applyTheme();
-          toggle.hidden = false;
-        });
-      })();
-    </script>
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/theme.js?v=1"></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=2" />
   </head>
   <body id="inicio">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>

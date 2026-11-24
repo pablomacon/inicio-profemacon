@@ -6,6 +6,7 @@ Portal estático de acceso a los espacios educativos de Profe Macón, como apoyo
 
 - `index.html`: contenido, navegación, enlaces e iconos SVG.
 - `assets/css/styles.css`: diseño adaptable, colores y tipografía.
+- JavaScript de temas: assets/js/theme.js (selección y preferencia guardada).
 - `assets/img/`: logotipos originales.
 - `assets/fonts/`: Montserrat variable y su licencia SIL Open Font License.
 
