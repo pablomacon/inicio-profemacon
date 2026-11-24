@@ -9,6 +9,7 @@ Portal estático de acceso a los espacios educativos de Profe Macón, como apoyo
 - `assets/js/theme.js`: selección del tema y preferencia guardada en el navegador.
 - `assets/img/`: logotipos para los modos claro y oscuro.
 - `assets/fonts/`: Montserrat variable y su licencia SIL Open Font License.
+- `DESIGN-SYSTEM.md`: valores y criterios visuales reutilizables.
 
 Los colores principales se definen en variables CSS de `:root`, con ajustes adicionales en las reglas de cada componente y del modo oscuro. Se utiliza Montserrat para títulos y texto, con pesos adaptados a cada jerarquía. La portada es estática y no requiere dependencias de ejecución. El selector de tema usa JavaScript para respetar la preferencia del sistema y guardar la elección en el navegador.
 
